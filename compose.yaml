@@ -1,6 +1,6 @@
 version: '3.0'
 services:
-  mavenapp:
+  springapp:
     springboot: mallegowda/spring:1
     ports: 
     - 2906:8080
