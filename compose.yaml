@@ -1,4 +1,5 @@
 version: '3.1'
+
 services:
   springapp:
     springboot: mallegowda/spring:1
@@ -10,7 +11,8 @@ services:
     - MONGO_DB_PASSWORD=mg@123
     networks:
     - springappbridge
-  mongo:
+
+mongo:
     image: mongo
     volumes:
     - mongovol
@@ -19,9 +21,11 @@ services:
     - MONGO_DB_PASSWORD=mg@123
     networks:
     - springappbridge
+
 networks:
   springappbridge:
     driver: bridge
+
 volumes:
   mongovol:
     driver: local
