@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   springapp:
-    springboot: mallegowda/spring:1
+    springboot: mallegowda/spring:2
     ports: 
     - 2906:8080
     environment:
