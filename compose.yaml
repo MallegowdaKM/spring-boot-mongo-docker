@@ -12,7 +12,7 @@ services:
     networks:
     - springappbridge
 
-mongoawsebs:
+mongo:
     image: mongo:latest
     volumes:
     - mongovol
